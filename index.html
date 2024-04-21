@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+   
+   
+    <div class="round">
+        <div class="date" id="date">
+            <div class="assign" id="assign"></div>
+        </div>
+
+        <div class="outer_min" id="lead2">
+            <div class="inner_min"></div>
+        </div>
+       
+        <div class="outer_hour" id="lead1">
+            <div class="inner_hour"></div>
+        </div>
+        <div class="outer_sec" id="lead3">
+            <div class="inner_sec"></div>
+        </div>
+        <div class="dot"></div>
+    </div>
+
+
+
+    <div id="result">
+        <div id="pa1" class="pa"></div>
+        <div id="pa2" class="pa"></div>
+        <div id="pa3" class="pa"></div>
+    </div>
+
+
+
+    <p id="tit">Timer</p>
+    <div class="container" id="con">
+        <div class="front" id="fro">
+            <p id="timer"> Set Time</p>
+            <div class="total">
+            <div class="user" >
+                <input type="number" id="i1"  placeholder="Hour">
+            </div>
+            <div class="user" >
+                <input type="number" id="i2" placeholder="Min">
+            </div>
+            <div class="user" >
+                <input type="number" id="i3" placeholder="Sec">
+            </div>
+        </div>
+        <button id="settime" onclick="callTimer()">Set</button>
+        </div>
+
+
+
+    
+        <div class="clock" id="clo">
+           <p id="tick">Tick Tock.</p>
+            <div class="box" id="hours"> 
+                <div class="avi" id="idea1"></div>
+                <div id="ho" class="b"></div>
+                <div id="mudi"></div>
+            </div>
+            <div class="box" id="minutes">
+                <div class="avi" id="idea2"></div>
+                <div id="min" class="b"></div>
+                <div id="min2"></div>
+
+            </div>
+            <div class="box" id="nimi">
+                <div class="avi" id="idea"></div>
+                <div id="neco" class="b"></div>
+            </div>
+        </div>
+    </div>
+    <div class="circle" id="circle">
+            <div class="cover1" id="cover1">
+                <div class="cover"></div>
+            </div>
+            
+            <div class="in_circle">
+            <div class="inp">
+                <input type="number"  id="inp" style="position: relative;" placeholder="Sec">
+            </div>
+            <div class="text" id="text1" style="position: absolute;"></div>
+        </div>
+    </div>
+
+    
+    <script src="clock.js"></script>
+</body>
+</html>

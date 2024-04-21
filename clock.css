@@ -1,0 +1,446 @@
+body{
+    background-image: linear-gradient(to bottom,rgb(245, 213, 154),white,orange);
+    /* background-image: linear-gradient(to bottom,white, white,brown); */
+ background-repeat: no-repeat;
+    height: 638px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#tit{
+text-align: center;
+background-image: linear-gradient(black,rgb(253, 0, 0),black);
+font-size: 60px;
+font-weight: 900; 
+position: relative;
+top: -80px;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: thooku 2.0s infinite ease-in;
+}
+.container{
+height: 290px;
+width:840px ;
+position:relative;
+top: -80px;
+/* left: 50%;
+top: 50%;
+transform: translate(-50%,-50%); */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+animation-fill-mode: forwards;
+border-radius: 20px;
+overflow: hidden;
+animation: pangu 1.5s infinite ease-in-out;
+}
+.clock{
+height: 250px;
+width:800px ;
+position:relative;
+/* background-image: linear-gradient(Red,brown,red); */
+background-image: linear-gradient(to left,brown,gold,brown);
+display: flex;
+flex-direction: row;
+justify-content: center;
+border-radius: 20px;
+box-shadow: 0px 0px 10px 7px grey;
+}
+.front{
+height: 250px;
+width:800px;
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: linear-gradient(to left,brown,gold,brown);
+border-radius: 20px;
+box-shadow: 0px 0px 10px 7px grey;
+}
+.total{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;justify-content: center;
+}
+input{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 5px;
+    color: brown;
+    border-radius: 10px;
+}
+input:focus{
+   outline: none;
+   border: 3px solid brown;
+   background-image: linear-gradient(to bottom,white,white,brown);
+   font-size: 25px;
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    appearance: none;
+    -webkit-appearance:none ;
+}
+
+.box{
+    height: 75px;
+    width: 100px;
+    background-image: linear-gradient(to left,black,rgb(56, 53, 53),black);
+    margin-left: 10px;
+    margin-top: 10%;
+    border: black solid 2px;
+    font-size: 25px;
+    font-weight: bolder;
+    overflow: hidden;position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+     box-shadow: 0px 0px 6px 3px rgb(255, 252, 252); 
+    
+}
+.avi{
+    height: 75px;
+    width: 100px;
+    position: absolute;
+    background-image: linear-gradient(to top,rgb(2, 2, 2),rgb(56, 53, 53),rgb(51, 50, 50));
+   
+    border: black solid 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: wheat;
+}
+#timer
+{
+    margin-top: -130px;
+    font-size: 40px;
+    font-weight: 1000;
+    position: absolute;
+    background-image: linear-gradient(black,rgb(255, 0, 0),black);
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#tick{
+   top: -30px;
+    font-size: 40px;
+    font-weight: 1000;
+    position: absolute;
+    background-image: linear-gradient(black,rgb(255, 0, 0),black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#settime{
+    position: relative;
+    top: 40px;
+    height: 30px;
+    width: 150px;
+    font-size: 23px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 5px;
+    background-image:linear-gradient(to right,black,rgb(134, 127, 127),black) ;
+    font-family:'Times New Roman', Times, serif; 
+}
+#settime:hover{
+   background: linear-gradient(to bottom,white,rgb(134, 127, 127),black);
+   color: wheat;
+}
+
+#settime:active{
+box-shadow: 0px 0px 5px 5px brown;
+color: brown;
+}   
+@keyframes slide {
+    0%{
+        position: relative;
+        top: 0px;
+    }
+    100%{
+        position: relative;
+        top: -100%;
+    }
+    
+}
+@keyframes thambi {
+    0%{
+        position: absolute;
+        top: 0px;
+    }
+    100%{
+        position: absolute;
+        top: -100%;
+    }
+}
+.b{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0px 0px 5px 2px white;
+    
+}
+#mudi{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: wheat;
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+#min2{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+@keyframes flip {
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+         
+    }
+}
+@keyframes reflip {
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+         
+    }
+}
+@keyframes pangu {
+    0%{
+        box-shadow: 0px 0px 10px 8px gold;
+    }
+    50%{
+        box-shadow: 0px 0px 5px 6px brown;
+    }
+    100%{
+        box-shadow: 0px 0px 10px 8px gold;
+    }
+}
+
+@keyframes thooku {
+    0%{
+        position: relative;
+        transform: rotate(0deg);
+        top: 0px;
+        bottom: -30px;
+    }
+    50%{
+        position: relative;
+        transform: rotate(0deg);
+        top: -50px;
+        
+    }
+    100%{
+        position: relative;
+        transform: rotate(0deg);
+        top: 0px;
+    }
+}
+@keyframes timeup{
+0%{
+    background-color: wheat;
+}
+50%{
+    background-image: linear-gradient(red,white,red);
+    width:900px;
+    height: 340px;
+}
+100%{
+    background-color: wheat;
+}
+}
+
+/*Analog  Clock Design*/
+.round{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-image: url("fr.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px rgb(54, 54, 54) ;
+}
+div.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+
+.outer_hour{
+    height: 60%;
+    width: 4.5px;
+   
+    position: absolute;
+    overflow: hidden;
+}
+.inner_hour{
+    height: 50%;
+    width: 4.5px;
+    background-color: black;
+}
+
+.outer_min{
+    height: 70%;
+    width: 2.5px;
+    position: absolute;
+    transform: rotate(40deg);
+}
+.inner_min{
+    height: 50%;
+    width: 2.5px;
+    background-color: rgb(78, 78, 78);
+}
+.outer_sec{
+    height: 70%;
+    width: 1.5px;
+    position: absolute;
+    /* animation: sec 1.0s infinite; */
+}
+.inner_sec{
+    height: 50%;
+    width: 1.5px;
+    background-color: red;
+}
+
+#result{
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.pa{
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    font-size:2opx;
+    
+}
+
+.date{
+    position: relative;
+    background-color: rgb(216, 213, 213);
+    height: 30px;
+    width: 70px;
+    top: 30px;
+    border-radius: 5px;
+    background-image: url("./date.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.assign{
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    top: 5px;
+    text-align: center;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 225px;
+    left: 15px; 
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px rgb(190, 190, 190);
+    
+}
+
+.cover
+{
+    height:100px;
+    width: 200px;
+    background-image: linear-gradient(orange,green,red);
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 150px;
+    border-top-right-radius:150px;
+    background-color: wheat;
+}
+.in_circle{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:10px;
+    left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    color: wheat;
+    font-size: 35px;
+
+}
+.cover1{
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+@keyframes thirumbu {
+    0%{
+        transform: rotate(0deg);  
+    }
+   
+    100%{
+        transform: rotate(360deg);
+    }
+}
